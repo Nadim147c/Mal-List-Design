@@ -1,0 +1,122 @@
+/*-----------------------
+
+███╗░░░███╗░█████╗░███╗░░██╗░██████╗░░█████╗░  ██╗░░░░░██╗░██████╗████████╗
+████╗░████║██╔══██╗████╗░██║██╔════╝░██╔══██╗  ██║░░░░░██║██╔════╝╚══██╔══╝
+██╔████╔██║███████║██╔██╗██║██║░░██╗░███████║  ██║░░░░░██║╚█████╗░░░░██║░░░
+██║╚██╔╝██║██╔══██║██║╚████║██║░░╚██╗██╔══██║  ██║░░░░░██║░╚═══██╗░░░██║░░░
+██║░╚═╝░██║██║░░██║██║░╚███║╚██████╔╝██║░░██║  ███████╗██║██████╔╝░░░██║░░░
+╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝░░╚═╝  ╚══════╝╚═╝╚═════╝░░░░╚═╝░░░
+-----------------------*/
+
+@\import "https://3n147.github.io/Mal-List-Design/VL's_design.css";
+
+@\import "https://malscraper.azurewebsites.net/covers/manga/Nadim147/presets/dataimagelinkbefore";
+
+/*--------------------*/
+/*     Chat-bubble    */
+/*--------------------*/
+/* All Anime */
+[data-query*='status":7'] {
+	--speach: "Welcome\a to my\a Mangalist!!";
+}
+
+/* Watching/Reading */
+[data-query*='status":1'] {
+	--speach: "You wanna\a  know, what am\a i reading?";
+}
+
+/* Completed */
+[data-query*='status":2'] {
+	--speach: "Yeah, I\a completed\a all of them.";
+}
+
+/* Onhold */
+[data-query*='status":3'] {
+	--speach: "Too busy\a to complete\a them!";
+}
+
+/* Dropped */
+[data-query*='status":4'] {
+	--speach: "Not worth\a my time.\a :|";
+}
+
+/* Planned */
+[data-query*='status":6'] {
+	--speach: "I'm planning \a to read \athem all...";
+}
+
+/*--The end--*/
+
+
+/*-S-T-A-R-T--------------------*\
+| Per-Category Banner Image      |
+\*------------------------------*/
+/* Post : https://imgur.com/a/aHJ0fxt */
+/* All Anime */
+[data-query*='status":7'] {
+	--banner: url(https://imgur.com/XjEUVRq.jpg);
+}
+
+/* Watching/Reading */
+[data-query*='status":1'] {
+	--banner: url(https://imgur.com/XSqVKYd.jpg);
+}
+
+/* Completed */
+[data-query*='status":2'] {
+	--banner: url(https://imgur.com/OgIWa7u.jpg);
+}
+
+/* Onhold */
+[data-query*='status":3'] {
+	--banner: url(https://imgur.com/k7Jutq8.jpg);
+}
+
+/* Dropped */
+[data-query*='status":4'] {
+	--banner: url(https://imgur.com/Y8K7WJg.jpg);
+}
+
+/* Planned */
+[data-query*='status":6'] {
+	--banner: url(https://imgur.com/5CXrNHt.jpg);
+}
+
+/*------------------------E-N-D-*/
+
+.list-item {
+	border-radius: 20px
+}
+
+.list-table .list-table-data .data.status {
+	width: 80% !important
+}
+
+.status.reading, .status.watching {
+	background: linear-gradient(90deg, var(--watching), rgba(0, 0, 0, 0)) !important
+}
+
+.status.completed {
+	background: linear-gradient(90deg, var(--completed), rgba(0, 0, 0, 0)) !important
+}
+
+.status.onhold {
+	background: linear-gradient(90deg, var(--onhold), rgba(0, 0, 0, 0)) !important
+}
+
+.status.dropped {
+	background: linear-gradient(90deg, var(--dropped), rgba(0, 0, 0, 0)) !important
+}
+
+.status.plantoread, .status.plantowatch {
+	background: linear-gradient(90deg, var(--plantowatch), rgba(0, 0, 0, 0)) !important
+}
+
+.status.reading, .status.watching, .status.completed, .status.onhold, .status.dropped, .status.plantoread, .status.plantowatch {
+	opacity: .25 !important;
+	border-radius: 20px
+}
+
+.link.sort img {
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, .644)
+}
