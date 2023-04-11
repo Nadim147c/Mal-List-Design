@@ -1,0 +1,44 @@
+:root {
+    /* Primary Customization */
+    --name: "Nadim147";
+    --avatar: url("https://i.pinimg.com/564x/d3/a7/98/d3a7983c1a90b3551de075d94264ff6a.jpg");
+    --avatar-hover: url("https://media.tenor.com/GB2kusUamFYAAAAC/guts-berserk-guts.gif");
+    --character: url(none);
+    --background: url("https://i.imgur.com/FCLQFvk.jpg");
+
+    /* Generic Colours */
+    --pbg: #161616;
+    --bg: #212121;
+    --bg-dark: #444;
+    --text: #ffffff;
+    --text-h: #416abe;
+    --text-dim: rgb(255, 255, 255);
+    --text-dim-h: #999;
+    --text-dark: #ababab;
+    --icon: #e0e0e0;
+    --accent: rgb(119, 0, 255);
+    --banner-text: #0f0;
+    --banner-text-shadow: #00000000;
+
+    /* Button Colours */
+    --btn-bg: #191919;
+    --btn-bg-h: #7e7e7e;
+    --btn-head-bg-h: #ffffff;
+    --btn-text-h: #212121;
+
+    /* Header Colours */
+    --text-head: #9b9b9b;
+    --text-head-h: #ababab;
+
+    /* Status Colours */
+    --watching: #00ff00;
+    --completed: #1658ff;
+    --onhold: #ffdb65;
+    --dropped: #ff626a;
+    --plantowatch: #adadad;
+
+    /* Single-Use Colours */
+    --cover-bg: #0d0e2ee3;
+    --edit-btn: #323232;
+    --checkmark: #0f0;
+}
